@@ -1,0 +1,3 @@
+CREATE SCHEMA [Coupon]
+AUTHORIZATION [dbo]
+GO

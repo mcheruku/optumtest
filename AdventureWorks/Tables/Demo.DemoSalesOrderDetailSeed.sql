@@ -1,0 +1,15 @@
+CREATE TABLE [Demo].[DemoSalesOrderDetailSeed]
+(
+[OrderQty] [smallint] NOT NULL,
+[ProductID] [int] NOT NULL,
+[SpecialOfferID] [int] NOT NULL,
+[OrderID] [int] NOT NULL,
+[LocalID] [int] NOT NULL IDENTITY(1, 1),
+CONSTRAINT [PK__DemoSale__499359DA37DC4424] PRIMARY KEY NONCLUSTERED  ([LocalID]),
+INDEX [IX_OrderID] NONCLUSTERED HASH ([OrderID]) WITH (BUCKET_COUNT=1048576)
+)
+WITH
+(
+MEMORY_OPTIMIZED = ON
+)
+GO

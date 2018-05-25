@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[TblGender]
+(
+[ID] [int] NOT NULL,
+[Gender] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[TblGender] ADD CONSTRAINT [PK__TblGende__3214EC27D18D8A9D] PRIMARY KEY CLUSTERED  ([ID]) ON [PRIMARY]
+GO

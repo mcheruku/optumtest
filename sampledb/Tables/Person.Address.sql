@@ -1,6 +1,6 @@
 CREATE TABLE [Person].[Address]
 (
-[Address] [int] NOT NULL,
+[AddressID] [int] NOT NULL,
 [AddressL1] [nvarchar] (60) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [AddressL2] [nvarchar] (60) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [City] [nvarchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,

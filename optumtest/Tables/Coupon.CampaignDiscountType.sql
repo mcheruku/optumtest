@@ -1,7 +1,7 @@
 CREATE TABLE [Coupon].[CampaignDiscountType]
 (
-[CampaignID] [bigint] NOT NULL,
-[DiscountTypeID] [tinyint] NOT NULL,
+[Campaign] [bigint] NOT NULL,
+[DiscountType] [tinyint] NOT NULL,
 [DiscountValue] [decimal] (6, 2) NOT NULL,
 [UTCCreatedDateTime] [datetime] NOT NULL CONSTRAINT [DF_CampaignDiscountType_UTCCreatedDateTime] DEFAULT (getutcdate()),
 [UTCUpdatedDateTime] [datetime] NOT NULL CONSTRAINT [DF_CampaignDiscountType_UTCUpdatedDateTime] DEFAULT (getutcdate())
